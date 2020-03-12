@@ -1,0 +1,11 @@
+<!--components/skill.wxml-->
+<view class="login">
+    <image src="../img/logo.png" />
+    <button wx:if="{{!hasUserInfo && canIUse}}" class="login-btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+      立即登录
+    </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+</view>

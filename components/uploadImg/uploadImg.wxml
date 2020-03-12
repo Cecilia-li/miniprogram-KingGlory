@@ -1,0 +1,12 @@
+<view class="choose-img-box" wx:if="{{!imgFlag}}">
+    <image class="selected-img-box" src="../../img/chooseImg.png" bindtap="chooseImg" />
+</view>
+<view class="choose-img-box">
+    <block wx:for="{{img}}" wx:key="index">
+        <view class="selected-img-box">
+            <image class="selected-img" src="{{item}}" bindtap="chooseImg" />
+            <view class="delete" data-index="{{index}}" bindtap="delImg">X</view>
+        </view>
+    </block>
+    <text class="preview" wx:if="{{imgFlag}}" bindtap="previewImg">预览</text>
+</view>

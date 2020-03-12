@@ -1,0 +1,58 @@
+<!-- index.wxml -->
+<view class="container">
+  <myTitle></myTitle>
+  <view class="swiper-container">
+    <swiper indicator-dots='true' indicator-color='rgba(230,230,230,1)' indicator-active-color='#db9e3f' autoplay='true'>
+      <swiper-item wx:for="{{swiperImageUrl.length}}">
+        <image src="{{swiperImageUrl[item]}}" />
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="news">
+    <view class="news-title flex-spacebetween">
+      <text>新闻资讯</text>
+      <image src="img/gengduo.svg" />
+    </view>
+    <view class="news-classify flex-spacebetween">
+      <view class="{{currentTab==0?'active':''}}" id="0" bindtap="newsClassifyTab">公告</view>
+      <view class="{{currentTab==1?'active':''}}" id="1" bindtap="newsClassifyTab">新闻</view>
+      <view class="{{currentTab==2?'active':''}}" id="2" bindtap="newsClassifyTab">活动</view>
+      <view class="{{currentTab==3?'active':''}}" id="3" bindtap="newsClassifyTab">赛事</view>
+    </view>
+    <swiper bindchange="swiperTab" current="{{currentTab}}">
+      <swiper-item>
+        <view wx:for="{{5}}" class="news-list flex-spacebetween">
+          <text class="news-list-contain" catchtap="skip">[公告]|净化游戏环境声明及处罚公告（11月18日-12月8日）</text>
+          <text>12/02</text>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view wx:for="{{5}}" class="news-list flex-spacebetween">
+          <text class="news-list-contain" catchtap="skip">[新闻]|12月3日全服不停机更新公告</text>
+          <text>12/02</text>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view wx:for="{{5}}" class="news-list flex-spacebetween">
+          <text class="news-list-contain" catchtap="skip">[活动]|12月3日全服不停机更新公告</text>
+          <text>12/02</text>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view wx:for="{{5}}" class="news-list flex-spacebetween">
+          <text class="news-list-contain" catchtap="skip">[赛事]|12月3日全服不停机更新公告</text>
+          <text>12/02</text>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+  
+  <view class="videos">
+    <view class="videos-title flex-spacebetween">
+      <text>热门视频</text>
+      <image src="img/gengduo.svg" />
+    </view>
+    <video controls src="https://apd-35f594c91fe80f37af88519e8cc61735.v.smtcdns.com/om.tc.qq.com/AftcWNcEzvezvB-9wqRENhzcYn85p8ISBmPKRhFc0w7w/uwMROfz2r57AoaQXGdGnC2deB3dYv4oNCBdVbCXSmvjDwMX6/szg_60055417_50001_b075f4f36aa84cf7b667685d74b49223.f622.mp4?sdtfrom=v1104&guid=8ec828f0f5a167493e2d01ca3d1a1535&vkey=7606478E7A21E930CF65955A6D76D7285D3C93469D4910163D38EBD633E6148B3F6F83605109B647686C2EA08676FAD8BB38575E2C25C3CB9C2F6AB165429BF1473048179D0D74092E17AFE4A1589777ED03AF36A2DA52D663386EBA160540F9B95E52F5B8695C70AC0A093FC813BB63182EDB1F8245FFC243A9618665EF31BC">
+    </video>
+  </view>
+</view>

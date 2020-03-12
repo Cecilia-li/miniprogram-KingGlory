@@ -1,0 +1,84 @@
+/* pages/content/content.wxss */
+page{
+    background-color: #f1f1f1;
+}
+
+.header{
+    height: 73rpx;
+    width: 100%;
+    border-bottom: 1rpx solid #d4d4d5;
+}
+.htitle{
+    color: #4394e4;
+    font-size: 28rpx;
+    height: 73rpx;
+    font-weight: bold;
+    line-height: 73rpx;
+    margin-left: 65rpx;
+}
+.htime{
+    color: #9fa0a0;
+    font-size: 18rpx;
+    float: right;
+    line-height: 73rpx;
+    margin-right: 20rpx;
+}
+
+.body{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 20rpx;
+    font-size: 26rpx;
+}
+.bcontent{
+    margin-top: 35rpx;
+}
+.ctitle{
+    margin-left: 5%;
+    font-size: 28rpx;
+    font-weight: bold;
+    color: #4394e4;
+}
+textarea{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    margin-top: 20rpx;
+    border: 1rpx solid #9fa0a0;
+    height: 150rpx;
+}
+.csubmit{
+    background-color: #4394e4;
+    margin-top: 35rpx;
+    margin-bottom: 35rpx;
+}
+.btitle{
+    font-weight: bold;
+}
+
+.comment{
+    margin-top: 80rpx;
+    background-color: #FFF;
+    border-radius: 30rpx;
+    padding-top: 35rpx;
+    padding-bottom: 70rpx;
+}
+.conment-list{
+    font-size: 26rpx;
+    margin-left: 5%;
+    margin-top: 35rpx;
+    margin-right: 5%;
+    width: 90%;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+.getuser{
+    margin-bottom: 20rpx;
+}
+.divLine{
+    width: 100%;
+    height: 2rpx;
+    background-color: #9fa0a0;
+    margin-top: 35rpx;
+}

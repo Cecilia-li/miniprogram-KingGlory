@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "myTitle":"../../components/title/title"
+  },
+  "navigationBarTitleText": "王者荣耀"
+}

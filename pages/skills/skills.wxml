@@ -1,0 +1,70 @@
+<view class="container">
+    <!-- <view class="userinfo">
+        <button wx:if="{{!userInfo}}" class="user-get" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+            登录
+        </button>
+        <view wx:else class="userinfo-msg">
+            <view class="userAvatar">
+                <open-data type="userAvatarUrl" />
+            </view>
+            <view class="nickName">
+                <open-data type="userNickName" />
+            </view>
+        </view>
+    </view> -->
+    <login></login>
+    <view class="nav">
+        <navigator class="nav-center">
+            <text class="text-bb">查看攻略</text>
+        </navigator>
+        <button class="nav-center" bindtap="toUpload" open-type="getUserInfo">上传攻略</button>
+    </view>
+    <!-- hero -->
+    <view class="hero-skills">
+        <view class="hero-title">
+            <text class="iconfont icon-yingxiong"></text>
+            英雄攻略
+        </view>
+        <view class="hero">
+            <view class="hero-hot">
+                <block wx:for="{{hotHero}}" wx:key="{{item.hero_id}}">
+                    <view class="hreo-img" style="background-image: url({{item.cover}});">
+                        <view class="hero-classify">热门</view>
+                    </view>
+                </block>
+                <view class="hero-more" bindtap="show">展开</view>
+            </view>
+            <view class="morehero" wx:if="{{toShow}}">
+                <view class="moerhero-hero">
+                    <block wx:for="{{testList}}" wx:key="{{item.hero_id}}">
+                        <view class="hero-item">
+                            <view class="more-item" style=" background-image:url({{item.cover}})"></view>
+                            <text style="font-size:24rpx;">{{item.name}}</text>
+                        </view>
+                    </block>
+                </view>
+                <view class="morehero-classify">
+                    <block wx:for="{{heroClassify}}" wx:key="{{index}}">
+                        <view data-index="{{index}}" bindtap="changeActive" class="classify {{active===index?'active':''}}">
+                            {{item.classify}}
+                        </view>
+                    </block>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- skills -->
+    <view class="hot-skills">
+        <view class="hs-head">
+            <text class="iconfont icon-gonglve icon"></text>
+            <text class="hs-title">热门攻略</text>
+        </view>
+        <view class="hs-items" wx:for="{{skills}}" wx:key="index">
+            <image class="hst-img" src="{{item.src}}" mode="widthFix" />
+            <view class="hst-description">
+                <view class="hst-title">{{item.title}}</view>
+                <view class="hst-de">{{item.description}}</view>
+            </view>
+        </view>
+    </view>
+</view>

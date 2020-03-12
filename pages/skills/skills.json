@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "login":"../../components/title/title"
+  },
+  "navigationBarTitleText": "英雄技巧"
+}

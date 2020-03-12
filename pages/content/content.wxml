@@ -1,0 +1,36 @@
+<!-- pages/content/content.wxml -->
+<view class="container">
+    <!-- 公共头部 -->
+    <myTitle></myTitle>
+    <!-- 资讯标题 -->
+    <view class="header" wx:for="{{article}}" wx:key="{{item}}">
+        <text class="htitle">{{item.title}}</text>
+        <text class="htime">{{item.time}}</text>
+    </view>
+    <!-- 资讯内容 -->
+    <view class="body" wx:for="{{article}}" wx:key="{{item}}">
+        <text class="btitle">{{item.btitle}}\n</text>
+        <view class="bcontent">
+            <text>{{item.parag1}}\n</text>
+            <text>{{item.parag2}}\n</text>
+            <text>{{item.parag3}}\n</text>
+            <text>{{item.parag4}}\n</text>
+            <text>{{item.parag5}}\n</text>
+            <text>{{item.parag6}}\n</text>
+            <text>{{item.parag7}}\n</text>
+            <text>{{item.parag8}}\n</text>
+            <text>{{item.parag9}}\n</text>
+        </view>
+    </view>
+    <!-- 发表评论 -->
+    <view class="comment">
+        <form class="container">
+            <text class="ctitle">评论专区</text>
+            <textarea class="ccontent" value="{{cinput}}" bindinput="incomment"></textarea>
+            <button class="csubmit" bindtap="subcomment">发表评论</button>
+        </form>
+        <view class="conment-list" wx:for="{{comment}}" wx:key="{{item}}">
+            <view><view class="getuser">{{item.user}}：</view>{{item.c1}}<view class="divLine"></view></view>
+        </view>
+    </view>
+</view>

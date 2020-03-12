@@ -1,0 +1,16 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{heroList}}">
+        <view class="picker">
+            请选择英雄：
+            <text class="hero" name="hero">{{heroList[index]}}</text>
+        </view>
+    </picker>
+    <view class="title">攻略说明：</view>
+    <textarea class="txt" name="description" placeholder="请输入您的攻略文字,最多5000字（必填）" maxlength="5000"></textarea>
+
+    <view class="title">上传图片：</view>
+    <uploadImg bind:getImgUrl="getImgUrl"></uploadImg>
+
+    <button formType="submit" class="submit" >上传</button>
+    <button formType="reset" class="reset" bindtap="resetAll">重置</button>
+</form>

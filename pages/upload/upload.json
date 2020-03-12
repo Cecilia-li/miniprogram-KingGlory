@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "攻略上传",
+  "usingComponents": {
+    "uploadImg":"../../components/uploadImg/uploadImg"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/skills/skills",
+    "pages/upload/upload",
+    "pages/content/content"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "selectedColor": "#555",
+    "color": "#555",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/img/message.png",
+        "selectedIconPath": "/img/message-active.png",
+        "text": "资讯"
+      },
+      {
+        "pagePath": "pages/skills/skills",
+        "iconPath": "/img/strategy.png",
+        "selectedIconPath": "/img/strategy-active.png",
+        "text": "攻略"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

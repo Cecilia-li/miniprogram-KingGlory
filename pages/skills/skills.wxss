@@ -1,0 +1,195 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_1551246_zcjs0ph5y2s.eot?t=1575856747602');
+  /* IE9 */
+  src: url('//at.alicdn.com/t/font_1551246_zcjs0ph5y2s.eot?t=1575856747602#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAQsAAsAAAAACMAAAAPfAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqFIIRKATYCJAMMCwgABCAFhG0HPRuXB8gOJQnBwABgEAFmBF/7ofvuLogOSYHn8YAqExU2gritq5M1EsiiEf/v27RHSC1WNdIVr6n/0g+FOGHF6ZrpSUyqcl09dfZm/3PMePV8byD5bTagqWWEVdN4PKCBRdRZAR/INR7gAfgtwztRXdwBnCfQqN98xFp2YSXYK9C0QFxwLAL7hEopwYZ6aS2wtogPYKM+Pck+Au+994//MBf2JDUZumj9KKsdUn8nfM0ipf+SxrwNpP4MEDaRMQsU4gA07SOD0CxSoyaSlyfXKkLqy/u/wmPpktqZ/uMlohYSNdOYSUWyU2yLQvAni0mL7f8matGCXyCGaEx3aoPS6eSnQi886eVkj7Yo2m73BNic7I1Bt7r95ce6+H2XQH55WYkOXiVsrq4omrZcOHLUk96awHlU7mNX+3Ekr9hypfOqUvlyWbpUqTigMSGsp3I/LVtF+WNaa0Dqy6yEfjD/ebDGkxwYqO7rq5S59/dXhRGdNUT16wGC2KlqGehDOZB6zs8YHCzJymsSInlrpxXqrxoYqGxw8X73qnv9/mHEjYEngTJZX6Aly67VvkrS+gPz/z0N9aHaRUMFdlELNFr1qVFV4Jyp7vBVB+U+wPnpH9+nKXOnniVfqcq+1S7L8s67S+Ps56xx4nxd1He7unhGTKBmlKo7WZVzF6fZbQSZdIf6XqxVW+VuCP34DJVFJBT6V7gRni30c2+f6tXLajzQBtmup092kVj+5Ilt34BqPQA6+DcdntOeLUSFmyqxKKLsWWtoHh9Y7HXKcz3K21mxAWXlpKuWxeYXvYLQXG0Mr/j2+TtCp67VPlCXxBRlPPdvmt04lz8P+B6d2bMsOzi8ZMwhwzchH1oBqsn8jNQCVFKuJrf9Hb9jJ9Z5tzgm/rZXFvDN9YPOc1RSgXoWUH/vzMG/wK7ZVHQuUueisiyWGc3uweFOM2iGaFUBsnWaaC/pqZ1JqNcTQVKnD7J6o4iCmYUaTRagVr1FaDQjZ3OTLgJSlAZMW09BaHcTklafIGv3CVEw41Cj1y+o1R4kNNoN1z2bjAenyBAwEnE71baU4miTkSFaUeFnl2N2oR4Jca6Hr8aClfNSYcGh6WgONmKhjwXWRWy4KDIUI5gMVDZ1GdbrTZRZMPGYFoM7RNEcHxLCQC8UTJsMoLBKgCEirB2lzVIUDs3EiHG6ixSZty+HsRbSQ4SSshp1NUxgxfVPCRMstAYiR2SsVXYug60WYYUTiRh2EkNgYkDJpg2YHodMKGZ4FA+jiYJ1tAiYxQth2jF1RcHjSwzXtwcaoUNzpMhR1B2bjKx+EXZYyhnZJVxMCQAA') format('woff2'), url('//at.alicdn.com/t/font_1551246_zcjs0ph5y2s.woff?t=1575856747602') format('woff'), url('//at.alicdn.com/t/font_1551246_zcjs0ph5y2s.ttf?t=1575856747602') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */ url('//at.alicdn.com/t/font_1551246_zcjs0ph5y2s.svg?t=1575856747602#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-gonglve:before {
+  content: "\e73b";
+}
+.icon-yingxiong:before {
+  content: "\e845";
+}
+page {
+  background-color: #F1F1F1;
+}
+.container .userinfo-msg {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 60rpx;
+  background-color: white;
+}
+.container .userinfo-msg .userAvatar {
+  overflow: hidden;
+  width: 60rpx;
+  border-radius: 50%;
+}
+.container .nav {
+  display: flex;
+  background-color: #db9e3f;
+}
+.container .nav .nav-center {
+  flex: 1;
+  text-align: center;
+  background-color: #db9e3f;
+  color: white;
+  font-size: 30rpx;
+  height: 70rpx;
+  padding: 0;
+  line-height: 70rpx;
+  min-height: 70rpx;
+}
+.container .nav .nav-center .text-bb {
+  border-bottom: 4rpx solid white;
+  font-weight: bold;
+  line-height: 70rpx;
+}
+.container .hero-skills {
+  background-color: white;
+  padding: 0 30rpx;
+  margin-top: 30rpx;
+  border-top: 2rpx solid transparent;
+  position: relative;
+}
+.container .hero-skills .hero-title {
+  margin: 20rpx 0;
+  border-bottom: 2rpx solid black;
+  padding: 10rpx 0;
+}
+.container .hero-skills .hero .hero-hot {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 20rpx;
+}
+.container .hero-skills .hero .hreo-img {
+  width: 100rpx;
+  height: 100rpx;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.container .hero-skills .hero .hreo-img .hero-classify {
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 24rpx;
+  color: white;
+}
+.container .hero-skills .hero .hero-more {
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.container .hero-skills .morehero {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  right: -30rpx;
+  transform: translateY(105%);
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border: 2rpx solid #f1f1f1;
+  margin-top: 30rpx;
+  margin: 30rpx;
+}
+.container .hero-skills .morehero .moerhero-hero {
+  flex: 4;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 30rpx;
+}
+.container .hero-skills .morehero .moerhero-hero .hero-item {
+  margin-right: 20rpx;
+  text-align: center;
+}
+.container .hero-skills .morehero .moerhero-hero .more-item {
+  width: 110rpx;
+  height: 110rpx;
+  background-size: cover;
+}
+.container .hero-skills .morehero .morehero-classify {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.container .hero-skills .morehero .morehero-classify .classify {
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: black;
+  font-size: 30rpx;
+}
+.container .hero-skills .morehero .morehero-classify .active {
+  color: white;
+  background-color: #db9e3f;
+}
+.container .hot-skills {
+  margin-top: 20rpx;
+  padding: 30rpx;
+  background-color: white;
+}
+.container .hot-skills .hs-head {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 20rpx;
+  border-bottom: 2rpx solid black;
+}
+.container .hot-skills .hs-head .icon {
+  display: inline-block;
+  margin-top: 6rpx;
+}
+.container .hot-skills .hs-head .hs-title {
+  margin-left: 10rpx;
+  vertical-align: baseline;
+}
+.container .hot-skills .hs-items {
+  display: flex;
+  height: 140rpx;
+  justify-content: space-between;
+  margin-top: 30rpx;
+}
+.container .hot-skills .hs-items .hst-img {
+  width: 260rpx;
+}
+.container .hot-skills .hs-items .hst-description {
+  height: 140rpx;
+  width: 410rpx;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.container .hot-skills .hs-items .hst-description .hst-title {
+  width: 100%;
+  font-size: 24rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.container .hot-skills .hs-items .hst-description .hst-de {
+  width: 100%;
+  font-size: 22rpx;
+  color: gray;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
